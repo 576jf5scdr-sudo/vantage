@@ -429,7 +429,7 @@
     const ht = VIEWS[h[0]] ? h[0] : VIEWS[h[1]] ? h[1] : null; if (ht) ui.tab = ht;
     render(true); loadDesk();
     if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
-    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) navigator.serviceWorker.register('sw.js').catch(() => {});
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) { let hadCtl = !!navigator.serviceWorker.controller; navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadCtl) location.reload(); hadCtl = true; }); navigator.serviceWorker.register('sw.js').then(r => r.update()).catch(() => {}); }
     // refresh "today" things when app returns to foreground
     document.addEventListener('visibilitychange', () => { if (!document.hidden && !sheetEl) { loadDesk(); render(false); } });
   })();

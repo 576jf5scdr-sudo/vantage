@@ -1,0 +1,52 @@
+window.LESSONS = [
+  { id: 'budgeting', icon: 'wallet', title: 'Budgeting when pay changes', min: 3,
+    lead: 'Delivery income moves every week, so a budget has to survive your worst weeks, not your best.',
+    points: [
+      'Base your plan on a low-income week (or the average of your lowest 3), not the average.',
+      'Pay yourself first: move a fixed slice (even 10%) to savings the day money lands.',
+      'Cover fixed costs first (rent, phone, bike), then food, then fun with whatever is left.',
+      'Tracking beats guessing: log every expense for 7 days and look at the categories.'],
+    task: 'Log every expense for the next 7 days.' },
+  { id: 'emergency', icon: 'shield', title: 'Emergency fund', min: 3,
+    lead: 'A cash cushion is what turns a bad day into an annoyance instead of a crisis.',
+    points: [
+      'Starter goal: one small cushion (a few hundred euros) so one surprise does not hit a card.',
+      'Next goal: 3 months of essential costs. With irregular income, 4 to 6 months is safer.',
+      'Keep it separate and easy to reach, not invested and not in the same account you spend from.',
+      'For you, a bike breakdown that stops you working is exactly what it is for.'],
+    task: 'Open a separate pot and set up a small weekly transfer.' },
+  { id: 'index', icon: 'trend', title: 'Index funds vs crypto', min: 4,
+    lead: 'They are very different tools. One is built for slow growth, the other is a high-risk bet.',
+    points: [
+      'An index fund holds a small piece of hundreds of companies at very low fees. It is diversified, but it still goes down in bad years and nothing is guaranteed.',
+      'Large cryptocurrencies swing wildly and produce no cash flow. Most small coins end up near zero.',
+      'A common order of operations: emergency fund first, then boring diversified investing, then (optionally) a small amount for speculation you can afford to lose entirely.',
+      'This is general education, not personal financial advice.'],
+    task: 'Write down how much you could lose entirely without it changing your life.' },
+  { id: 'rugs', icon: 'lock', title: 'Memecoin rugs', min: 4,
+    lead: 'A rug pull is when the people who control a coin take the money out from under you.',
+    points: [
+      'Mint authority still active: the creator can print unlimited new coins and dilute you.',
+      'Liquidity not locked or burned: the creator can pull the pool and you cannot sell.',
+      'Top 10 wallets hold a huge share: a few sellers can crash the price.',
+      'Honeypots let you buy but not sell. Checks reduce these risks; they never remove them.',
+      'Your practice desk treats these checks as hard gates: fail one and the trade is rejected.'],
+    task: 'Open one coin on a chart site and find its holder share and liquidity lock.' },
+  { id: 'sizing', icon: 'target', title: 'Position sizing', min: 3,
+    lead: 'How much you put on each trade matters more than which coin you pick.',
+    points: [
+      'Risk a small fixed fraction of the current book each time, like 2%. Never size up because the last trade won.',
+      'Ten losses in a row at 2% still leaves about 82% of the book. Betting 20% each time leaves about 11%.',
+      'Sizing up after wins is a martingale: it feels great until one loss wipes out the wins.',
+      'Set a daily loss cap and a loss-streak stop so a bad day cannot become a bad month.'],
+    task: 'Compute 2% of your practice book and compare it with the desk trade size.' },
+  { id: 'income', icon: 'bolt', title: 'Online income ideas', min: 4,
+    lead: 'Realistic ways to add income on top of delivery. Most take a few weeks to start paying.',
+    points: [
+      'Skill-based side work: tutoring, translation, video editing, design. You are trading time for money, but at a higher rate.',
+      'Selling things: used gear, or simple products with a clear margin after fees.',
+      'Treat "overnight 10x" and "passive income from zero capital" claims as red flags.',
+      'Pick one skill, build a few samples, and get your first paying customer before anything else.',
+      'Check the tax and platform rules where you live before you start.'],
+    task: 'Pick one idea and write the first small step you can do this week.' }
+];

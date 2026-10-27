@@ -1,0 +1,1200 @@
+{
+ "currency": "USD",
+ "practice": true,
+ "generated": "2026-10-27 13:41",
+ "tz": "Europe/Athens",
+ "start": 1000.0,
+ "equity": 938.18,
+ "cash": 816.22,
+ "open_cost": 121.96,
+ "pct": -6.18,
+ "wins": 10,
+ "losses": 25,
+ "realised": -61.82,
+ "open_count": 6,
+ "daily_pnl": -61.81572509832661,
+ "daily_cap": 60.0,
+ "loss_streak": 1,
+ "streak_limit": 4,
+ "halt": "daily loss cap hit (latched until next Athens day)",
+ "scans": 66,
+ "scanned": 1464,
+ "vetted": 182,
+ "passed": 42,
+ "rejected": 1422,
+ "equity_series": [
+  {
+   "t": "2026-10-27 03:20",
+   "equity": 1000.0,
+   "note": "start"
+  },
+  {
+   "t": "2026-10-27 03:24",
+   "equity": 1000.0,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 03:29",
+   "equity": 1000.0,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 03:46",
+   "equity": 1000.0,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 03:56",
+   "equity": 1000.0,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:16",
+   "equity": 1033.2,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:24",
+   "equity": 1033.2,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:34",
+   "equity": 1033.2,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:35",
+   "equity": 1025.91,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:41",
+   "equity": 1025.91,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:44",
+   "equity": 1019.81,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:44",
+   "equity": 1019.81,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:46",
+   "equity": 1019.81,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:47",
+   "equity": 1019.81,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:47",
+   "equity": 1019.81,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:53",
+   "equity": 1013.35,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 04:59",
+   "equity": 1013.35,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:03",
+   "equity": 1013.35,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:05",
+   "equity": 1013.35,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:06",
+   "equity": 1013.35,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:13",
+   "equity": 997.39,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:14",
+   "equity": 997.39,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:14",
+   "equity": 997.39,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:15",
+   "equity": 997.39,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:17",
+   "equity": 997.39,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:18",
+   "equity": 997.39,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:23",
+   "equity": 992.06,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:32",
+   "equity": 992.06,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:46",
+   "equity": 992.06,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 05:55",
+   "equity": 986.88,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 06:01",
+   "equity": 986.88,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 06:17",
+   "equity": 987.0,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 06:23",
+   "equity": 975.91,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 06:34",
+   "equity": 966.99,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 06:42",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 06:54",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 06:58",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 07:17",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 07:21",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 07:34",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 07:46",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 07:52",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 08:00",
+   "equity": 962.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 08:17",
+   "equity": 968.04,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 08:25",
+   "equity": 980.22,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 08:37",
+   "equity": 980.22,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 08:39",
+   "equity": 982.31,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 08:51",
+   "equity": 982.27,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 09:01",
+   "equity": 982.27,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 09:13",
+   "equity": 964.33,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 09:24",
+   "equity": 969.7,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 09:35",
+   "equity": 969.7,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 09:41",
+   "equity": 959.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 09:49",
+   "equity": 959.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 10:07",
+   "equity": 959.45,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 10:13",
+   "equity": 956.1,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 10:27",
+   "equity": 954.04,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 10:41",
+   "equity": 954.04,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 10:49",
+   "equity": 974.17,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 11:07",
+   "equity": 974.17,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 11:11",
+   "equity": 968.57,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 11:22",
+   "equity": 968.57,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 11:37",
+   "equity": 930.47,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 11:43",
+   "equity": 930.47,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 11:51",
+   "equity": 930.47,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 12:01",
+   "equity": 930.47,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 12:13",
+   "equity": 930.47,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 12:23",
+   "equity": 930.47,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 12:31",
+   "equity": 938.18,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 12:42",
+   "equity": 938.18,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 12:57",
+   "equity": 938.18,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 13:05",
+   "equity": 938.18,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 13:17",
+   "equity": 938.18,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 13:23",
+   "equity": 938.18,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 13:36",
+   "equity": 938.18,
+   "note": "snapshot"
+  },
+  {
+   "t": "2026-10-27 13:41",
+   "equity": 938.18,
+   "note": "snapshot"
+  }
+ ],
+ "open_positions": [
+  {
+   "coin": "Conway-Sol",
+   "chain": "solana",
+   "entry": 4.1e-05,
+   "size": 20.66,
+   "opened": "2026-10-27T04:16:29.608242+02:00",
+   "link": "https://dexscreener.com/solana/2esrwnu4gwzaukxtz4k3w2bseuuzcmc3zvaeok3jb7mm"
+  },
+  {
+   "coin": "USDA",
+   "chain": "solana",
+   "entry": 0.001079,
+   "size": 20.66,
+   "opened": "2026-10-27T04:23:57.797868+02:00",
+   "link": "https://dexscreener.com/solana/acpphvug4njuhsucf5hhndwjrtjkuxch1ptrmxeamy1h"
+  },
+  {
+   "coin": "CHICO",
+   "chain": "solana",
+   "entry": 0.005467,
+   "size": 20.52,
+   "opened": "2026-10-27T04:35:12.827560+02:00",
+   "link": "https://dexscreener.com/solana/eztwxzfmns9sjjgvych35i6e3oywsdjdeql9cbzgfdap"
+  },
+  {
+   "coin": "\u2588\u2588\u2588WIF",
+   "chain": "solana",
+   "entry": 0.001554,
+   "size": 20.52,
+   "opened": "2026-10-27T04:35:14.430065+02:00",
+   "link": "https://dexscreener.com/solana/35qgkestyqozserbza7c7wdhr32svtgc6rzvds8kcemq"
+  },
+  {
+   "coin": "N64",
+   "chain": "solana",
+   "entry": 7.125e-05,
+   "size": 20.52,
+   "opened": "2026-10-27T04:35:15.021427+02:00",
+   "link": "https://dexscreener.com/solana/ewjia2nk268howctfitp8chqskec8z6azahcimkppxfi"
+  },
+  {
+   "coin": "wiener",
+   "chain": "solana",
+   "entry": 0.0001344,
+   "size": 19.08,
+   "opened": "2026-10-27T10:27:16.195063+02:00",
+   "link": "https://dexscreener.com/solana/hhp4hmzgrcnwu3qgvh6p7wfzhoxls7yecuvbs1wf3hzi"
+  }
+ ],
+ "closed_trades": [
+  {
+   "coin": "Blackout",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/8johbcattkxld1vsb8vvept7ywxv643cpcd29uarh32n",
+   "entry": 3.509e-05,
+   "exit": 5.261e-05,
+   "size": 19.37,
+   "pnl": 9.67,
+   "pct": 49.9,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "fell back to +50% after run",
+   "time": "2026-10-27 12:31",
+   "ts": "2026-10-27T12:31:00+02:00",
+   "opened_ts": "2026-10-27T11:22:00+02:00"
+  },
+  {
+   "coin": "urmom",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/8tyacyuttfqbglwez8nt6wkbkpqsej8oqq3k6fnp8vwu",
+   "entry": 0.0002396,
+   "exit": 0.0002146,
+   "size": 18.8,
+   "pnl": -1.96,
+   "pct": -10.4,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "closed: bought by mistake after daily 6% cap had been hit (cap now latched)",
+   "time": "2026-10-27 12:31",
+   "ts": "2026-10-27T12:31:00+02:00",
+   "opened_ts": "2026-10-27T12:31:00+02:00"
+  },
+  {
+   "coin": "Grex",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/gwea2ndre3hvovnacxt45rkuzeaiq8drkf7gxfuqsgrh",
+   "entry": 7.872e-05,
+   "exit": 2.171e-06,
+   "size": 19.48,
+   "pnl": -18.94,
+   "pct": -97.2,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "liquidity drop 2,205 vs 21,869",
+   "time": "2026-10-27 11:37",
+   "ts": "2026-10-27T11:37:00+02:00",
+   "opened_ts": "2026-10-27T11:07:00+02:00"
+  },
+  {
+   "coin": "PETER",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/6h9sewjanssdxljimtt8rxz6za62h1v6hhanegy9rmka",
+   "entry": 0.0001741,
+   "exit": 1.959e-06,
+   "size": 19.37,
+   "pnl": -19.15,
+   "pct": -98.9,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "liquidity drop 2,053 vs 34,955",
+   "time": "2026-10-27 11:37",
+   "ts": "2026-10-27T11:37:00+02:00",
+   "opened_ts": "2026-10-27T11:22:00+02:00"
+  },
+  {
+   "coin": "TS",
+   "chain": "solana",
+   "role": "MOMENTUM",
+   "link": "https://dexscreener.com/solana/5t3ke8hes7qhx1ayuw7ne67ry9k1d9omxoueptptbjwy",
+   "entry": 4.729e-05,
+   "exit": 3.369e-05,
+   "size": 19.48,
+   "pnl": -5.6,
+   "pct": -28.8,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "momentum hard stop -29%",
+   "time": "2026-10-27 11:11",
+   "ts": "2026-10-27T11:11:00+02:00",
+   "opened_ts": "2026-10-27T10:49:00+02:00"
+  },
+  {
+   "coin": "PEAK",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/h4sb6ch4bj4g9vjg3cda2h3gyamgcfuzxu8h56rhkvnc",
+   "entry": 5.33e-05,
+   "exit": 0.0001606,
+   "size": 10.0,
+   "pnl": 20.13,
+   "pct": 201.3,
+   "fraction": 0.5,
+   "partial": false,
+   "final": true,
+   "position_total": 30.56,
+   "reason": "sell at +200% (+201%) (50% sold)",
+   "time": "2026-10-27 10:49",
+   "ts": "2026-10-27T10:49:00+02:00",
+   "opened_ts": "2026-10-27T03:20:00+02:00"
+  },
+  {
+   "coin": "wiener",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/gypvk1rzf9ez8rfhmwxmtbve9ti2ksdefrcx8cpwbdat",
+   "entry": 0.0001409,
+   "exit": 0.0001109,
+   "size": 9.695,
+   "pnl": -2.06,
+   "pct": -21.3,
+   "fraction": 0.5,
+   "partial": false,
+   "final": true,
+   "position_total": 9.92,
+   "reason": "bag floor: fell back to +50% (50% sold)",
+   "time": "2026-10-27 10:27",
+   "ts": "2026-10-27T10:27:00+02:00",
+   "opened_ts": "2026-10-27T09:35:00+02:00"
+  },
+  {
+   "coin": "wiener",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/gypvk1rzf9ez8rfhmwxmtbve9ti2ksdefrcx8cpwbdat",
+   "entry": 0.0001409,
+   "exit": 0.000315,
+   "size": 9.695,
+   "pnl": 11.98,
+   "pct": 123.6,
+   "fraction": 0.5,
+   "partial": true,
+   "final": false,
+   "position_total": 9.92,
+   "reason": "half at +100%, bag running (50% sold)",
+   "time": "2026-10-27 10:13",
+   "ts": "2026-10-27T10:13:00+02:00",
+   "opened_ts": "2026-10-27T09:35:00+02:00"
+  },
+  {
+   "coin": "Blackout",
+   "chain": "solana",
+   "role": "MOMENTUM",
+   "link": "https://dexscreener.com/solana/92efstv7akaxasmjeb7lfqfkcibq3cwtbbvwjrh98wsn",
+   "entry": 5.343e-05,
+   "exit": 3.284e-05,
+   "size": 19.19,
+   "pnl": -7.4,
+   "pct": -38.5,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "momentum hard stop -39%",
+   "time": "2026-10-27 10:13",
+   "ts": "2026-10-27T10:13:00+02:00",
+   "opened_ts": "2026-10-27T09:48:00+02:00"
+  },
+  {
+   "coin": "Nothing",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/8qqn4bhtmuhdmpftw6fcrejyanxmbktu1t6ae4jkn7kb",
+   "entry": 0.0004581,
+   "exit": 0.0002689,
+   "size": 19.19,
+   "pnl": -7.93,
+   "pct": -41.3,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -41%",
+   "time": "2026-10-27 10:13",
+   "ts": "2026-10-27T10:13:00+02:00",
+   "opened_ts": "2026-10-27T10:07:00+02:00"
+  },
+  {
+   "coin": "OTF",
+   "chain": "solana",
+   "role": "MOMENTUM",
+   "link": "https://dexscreener.com/solana/2ueefnf3xbxp3hwwkfovwejs35mt88pa5z5rf6q1jxvt",
+   "entry": 5.187e-05,
+   "exit": 2.443e-05,
+   "size": 19.39,
+   "pnl": -10.26,
+   "pct": -52.9,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "momentum hard stop -53%",
+   "time": "2026-10-27 09:41",
+   "ts": "2026-10-27T09:41:00+02:00",
+   "opened_ts": "2026-10-27T09:35:00+02:00"
+  },
+  {
+   "coin": "s8n",
+   "chain": "solana",
+   "role": "DIP_HUNTER",
+   "link": "https://dexscreener.com/solana/a69iqptu1dv4p7uuilpwhbfhtiexqnspvcgwggdmt1fn",
+   "entry": 2.377e-05,
+   "exit": 3.997e-05,
+   "size": 19.65,
+   "pnl": 13.39,
+   "pct": 68.2,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "dip take profit +68%",
+   "time": "2026-10-27 09:23",
+   "ts": "2026-10-27T09:23:00+02:00",
+   "opened_ts": "2026-10-27T09:01:00+02:00"
+  },
+  {
+   "coin": "BLUNTS",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/hyc463skvr5evmmxve8ty7rtzgvwbf1jarrjiibdaepf",
+   "entry": 3.115e-05,
+   "exit": 1.82e-05,
+   "size": 19.29,
+   "pnl": -8.02,
+   "pct": -41.6,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -42%",
+   "time": "2026-10-27 09:23",
+   "ts": "2026-10-27T09:23:00+02:00",
+   "opened_ts": "2026-10-27T09:13:00+02:00"
+  },
+  {
+   "coin": "nocat",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/84hi8wamyx2my4r3d8cf2akqma5bi7vksxuokqwl8wnu",
+   "entry": 3.514e-05,
+   "exit": 2.742e-06,
+   "size": 19.46,
+   "pnl": -17.94,
+   "pct": -92.2,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "liquidity drop 2,661 vs 13,987",
+   "time": "2026-10-27 09:13",
+   "ts": "2026-10-27T09:13:00+02:00",
+   "opened_ts": "2026-10-27T08:51:00+02:00"
+  },
+  {
+   "coin": "LUMINA",
+   "chain": "solana",
+   "role": "MOMENTUM",
+   "link": "https://dexscreener.com/solana/dbvzegxvklnpgkjrxajbosgywhgnnn74ymowvbpbftuz",
+   "entry": 0.000181,
+   "exit": 0.0001261,
+   "size": 19.65,
+   "pnl": -5.96,
+   "pct": -30.3,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "momentum hard stop -30%",
+   "time": "2026-10-27 08:51",
+   "ts": "2026-10-27T08:51:00+02:00",
+   "opened_ts": "2026-10-27T08:39:00+02:00"
+  },
+  {
+   "coin": "OI",
+   "chain": "solana",
+   "role": "DIP_HUNTER",
+   "link": "https://dexscreener.com/solana/gsx8ixyeps5pbqug8kkrscsbhvo2y3zyc7y8ags1yewk",
+   "entry": 1.783e-05,
+   "exit": 2.619e-05,
+   "size": 19.65,
+   "pnl": 9.21,
+   "pct": 46.9,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "dip take profit +47%",
+   "time": "2026-10-27 08:51",
+   "ts": "2026-10-27T08:51:00+02:00",
+   "opened_ts": "2026-10-27T08:39:00+02:00"
+  },
+  {
+   "coin": "SI",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/acuz8lt1hktvnglzzdzmza8inexw4rawphvtmo6irzaf",
+   "entry": 1.835e-05,
+   "exit": 6.697e-06,
+   "size": 19.65,
+   "pnl": -12.48,
+   "pct": -63.5,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -64%",
+   "time": "2026-10-27 08:51",
+   "ts": "2026-10-27T08:51:00+02:00",
+   "opened_ts": "2026-10-27T08:39:00+02:00"
+  },
+  {
+   "coin": "GTAELON",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/9tqqursbxeykwj8ymg8btirs9fjzxjzjnuej9xb65h7k",
+   "entry": 0.0003253,
+   "exit": 0.0004805,
+   "size": 19.25,
+   "pnl": 9.18,
+   "pct": 47.7,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "fell back to +50% after run",
+   "time": "2026-10-27 08:51",
+   "ts": "2026-10-27T08:51:00+02:00",
+   "opened_ts": "2026-10-27T07:52:00+02:00"
+  },
+  {
+   "coin": "TGC",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/9g5xjr9vfkjhu9p96jqvhng9xf3s8yecxpdzthas5jkf",
+   "entry": 0.0001117,
+   "exit": 0.000136,
+   "size": 9.625,
+   "pnl": 2.09,
+   "pct": 21.8,
+   "fraction": 0.5,
+   "partial": false,
+   "final": true,
+   "position_total": 14.28,
+   "reason": "bag floor: fell back to +50% (50% sold)",
+   "time": "2026-10-27 08:39",
+   "ts": "2026-10-27T08:39:00+02:00",
+   "opened_ts": "2026-10-27T06:58:00+02:00"
+  },
+  {
+   "coin": "TGC",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/9g5xjr9vfkjhu9p96jqvhng9xf3s8yecxpdzthas5jkf",
+   "entry": 0.0001117,
+   "exit": 0.0002531,
+   "size": 9.625,
+   "pnl": 12.18,
+   "pct": 126.6,
+   "fraction": 0.5,
+   "partial": true,
+   "final": false,
+   "position_total": 14.28,
+   "reason": "half at +100%, bag running (50% sold)",
+   "time": "2026-10-27 08:25",
+   "ts": "2026-10-27T08:25:00+02:00",
+   "opened_ts": "2026-10-27T06:58:00+02:00"
+  },
+  {
+   "coin": "PEAK",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/h4sb6ch4bj4g9vjg3cda2h3gyamgcfuzxu8h56rhkvnc",
+   "entry": 5.33e-05,
+   "exit": 0.0001089,
+   "size": 10.0,
+   "pnl": 10.43,
+   "pct": 104.3,
+   "fraction": 0.5,
+   "partial": true,
+   "final": false,
+   "position_total": 30.56,
+   "reason": "half at +100%, bag running (50% sold)",
+   "time": "2026-10-27 08:17",
+   "ts": "2026-10-27T08:17:00+02:00",
+   "opened_ts": "2026-10-27T03:20:00+02:00"
+  },
+  {
+   "coin": "UNITE",
+   "chain": "solana",
+   "role": "MOMENTUM",
+   "link": "https://dexscreener.com/solana/egxkhnldvb7rdk2ozhlrdgfamsuazxxsulgawjer8wgu",
+   "entry": 8.86e-05,
+   "exit": 6.628e-05,
+   "size": 19.25,
+   "pnl": -4.85,
+   "pct": -25.2,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "momentum hard stop -25%",
+   "time": "2026-10-27 08:17",
+   "ts": "2026-10-27T08:17:00+02:00",
+   "opened_ts": "2026-10-27T07:52:00+02:00"
+  },
+  {
+   "coin": "CAT",
+   "chain": "solana",
+   "role": "MOMENTUM",
+   "link": "https://dexscreener.com/solana/5spzrxrmyax85fawnc61kvifvh63juwt4vizkunno4wd",
+   "entry": 8.866e-05,
+   "exit": 6.788e-05,
+   "size": 19.34,
+   "pnl": -4.53,
+   "pct": -23.4,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "momentum hard stop -23%",
+   "time": "2026-10-27 06:42",
+   "ts": "2026-10-27T06:42:00+02:00",
+   "opened_ts": "2026-10-27T06:34:00+02:00"
+  },
+  {
+   "coin": "Wifoween",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/7uqqlanyahzkmt6ydmzglabmfy7sfik3mg13hp9x8hih",
+   "entry": 6.789e-05,
+   "exit": 9.206e-05,
+   "size": 20.27,
+   "pnl": 7.22,
+   "pct": 35.6,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "fell back to +50% after run",
+   "time": "2026-10-27 06:34",
+   "ts": "2026-10-27T06:34:00+02:00",
+   "opened_ts": "2026-10-27T04:53:00+02:00"
+  },
+  {
+   "coin": "yolo",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/jbxfbn3gihk9ywty278jeug6qokkod66jvavubnrecbc",
+   "entry": 6.331e-05,
+   "exit": 3.568e-05,
+   "size": 19.74,
+   "pnl": -8.62,
+   "pct": -43.6,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -44%",
+   "time": "2026-10-27 06:34",
+   "ts": "2026-10-27T06:34:00+02:00",
+   "opened_ts": "2026-10-27T06:16:00+02:00"
+  },
+  {
+   "coin": "Leverage",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/gsga8icyrvnikgsisgwuvcvuf2qxmtt2dt2wnekcsawx",
+   "entry": 9.375e-05,
+   "exit": 5.762e-05,
+   "size": 19.52,
+   "pnl": -7.52,
+   "pct": -38.5,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -39%",
+   "time": "2026-10-27 06:34",
+   "ts": "2026-10-27T06:34:00+02:00",
+   "opened_ts": "2026-10-27T06:22:00+02:00"
+  },
+  {
+   "coin": "Particle",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/9nmkzvyhegavrdndh5tjjtu5qcxkudp1ztlqabck2q9n",
+   "entry": 9.317e-05,
+   "exit": 6.471e-05,
+   "size": 19.74,
+   "pnl": -6.03,
+   "pct": -30.5,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -31%",
+   "time": "2026-10-27 06:22",
+   "ts": "2026-10-27T06:22:00+02:00",
+   "opened_ts": "2026-10-27T06:16:00+02:00"
+  },
+  {
+   "coin": "IF",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/7mustrqwyeparxhzxmkxbur7qhakff6qvncbjhhj9ajz",
+   "entry": 1.598e-05,
+   "exit": 1.188e-05,
+   "size": 19.74,
+   "pnl": -5.06,
+   "pct": -25.7,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -26%",
+   "time": "2026-10-27 06:22",
+   "ts": "2026-10-27T06:22:00+02:00",
+   "opened_ts": "2026-10-27T06:16:00+02:00"
+  },
+  {
+   "coin": "TRUMP2028",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/7yvfsjjzheggz3c4qqutxn8zbch3dazfkc6ntxcpuyvd",
+   "entry": 0.0007459,
+   "exit": 0.00108,
+   "size": 20.0,
+   "pnl": 8.96,
+   "pct": 44.8,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "fell back to +50% after run",
+   "time": "2026-10-27 06:16",
+   "ts": "2026-10-27T06:16:00+02:00",
+   "opened_ts": "2026-10-27T03:20:00+02:00"
+  },
+  {
+   "coin": "ELON2028",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/6jede2e3c6j7snnq9vtblluz2wsyi7rx5ovvwy8hypdg",
+   "entry": 0.001501,
+   "exit": 0.0008589,
+   "size": 20.66,
+   "pnl": -8.84,
+   "pct": -42.8,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -43%",
+   "time": "2026-10-27 06:16",
+   "ts": "2026-10-27T06:16:00+02:00",
+   "opened_ts": "2026-10-27T04:23:00+02:00"
+  },
+  {
+   "coin": "ORBIT",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/9zuvxdqj1y1dhwijkqfuswfqqwqeh7mroprwuby2bbcp",
+   "entry": 1.934e-05,
+   "exit": 1.449e-05,
+   "size": 20.66,
+   "pnl": -5.18,
+   "pct": -25.1,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -25%",
+   "time": "2026-10-27 05:54",
+   "ts": "2026-10-27T05:54:00+02:00",
+   "opened_ts": "2026-10-27T04:16:00+02:00"
+  },
+  {
+   "coin": "BILLBOARD",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/7gwhild2m9fqqdgb48xnfbgrogmgj4qfsrdopq154uxv",
+   "entry": 2.002e-05,
+   "exit": 1.476e-05,
+   "size": 20.27,
+   "pnl": -5.33,
+   "pct": -26.3,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -26%",
+   "time": "2026-10-27 05:23",
+   "ts": "2026-10-27T05:23:00+02:00",
+   "opened_ts": "2026-10-27T04:53:00+02:00"
+  },
+  {
+   "coin": "DMAGA2028",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/8ughjr8qcwf7oz9uxbgyyctqwunizvfttb4qtj12t14c",
+   "entry": 0.0003337,
+   "exit": 0.0001627,
+   "size": 20.4,
+   "pnl": -10.45,
+   "pct": -51.2,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -51%",
+   "time": "2026-10-27 05:13",
+   "ts": "2026-10-27T05:13:00+02:00",
+   "opened_ts": "2026-10-27T04:44:00+02:00"
+  },
+  {
+   "coin": "DUPE",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/el47pszr8heqbxorlgdmxk96mrrsfmz4wueqf2cebsem",
+   "entry": 2.265e-05,
+   "exit": 1.649e-05,
+   "size": 20.27,
+   "pnl": -5.51,
+   "pct": -27.2,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -27%",
+   "time": "2026-10-27 05:13",
+   "ts": "2026-10-27T05:13:00+02:00",
+   "opened_ts": "2026-10-27T04:58:00+02:00"
+  },
+  {
+   "coin": "MIYA",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/4dgujyxecnq7zsqrnu14fwxmdijrwmmw7wigl7vrhfsw",
+   "entry": 0.0001834,
+   "exit": 0.0001254,
+   "size": 20.4,
+   "pnl": -6.45,
+   "pct": -31.6,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -32%",
+   "time": "2026-10-27 04:53",
+   "ts": "2026-10-27T04:53:00+02:00",
+   "opened_ts": "2026-10-27T04:44:00+02:00"
+  },
+  {
+   "coin": "HACHI",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/4x8xcqmnmaexkwug7xa6a3fg3lflvccvsyxos5fwhjol",
+   "entry": 0.0003464,
+   "exit": 0.0002441,
+   "size": 20.66,
+   "pnl": -6.1,
+   "pct": -29.5,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -30%",
+   "time": "2026-10-27 04:44",
+   "ts": "2026-10-27T04:44:00+02:00",
+   "opened_ts": "2026-10-27T04:23:00+02:00"
+  },
+  {
+   "coin": "DUPE",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/el47pszr8heqbxorlgdmxk96mrrsfmz4wueqf2cebsem",
+   "entry": 2.113e-05,
+   "exit": 1.367e-05,
+   "size": 20.66,
+   "pnl": -7.29,
+   "pct": -35.3,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "stop loss -35%",
+   "time": "2026-10-27 04:35",
+   "ts": "2026-10-27T04:35:00+02:00",
+   "opened_ts": "2026-10-27T04:16:00+02:00"
+  },
+  {
+   "coin": "HACHI",
+   "chain": "solana",
+   "role": "SNIPER",
+   "link": "https://dexscreener.com/solana/4x8xcqmnmaexkwug7xa6a3fg3lflvccvsyxos5fwhjol",
+   "entry": 0.0001471,
+   "exit": 0.0003913,
+   "size": 20.0,
+   "pnl": 33.2,
+   "pct": 166.0,
+   "fraction": 1.0,
+   "partial": false,
+   "final": true,
+   "position_total": null,
+   "reason": "take profit +166%",
+   "time": "2026-10-27 04:16",
+   "ts": "2026-10-27T04:16:00+02:00",
+   "opened_ts": "2026-10-27T03:20:00+02:00"
+  }
+ ],
+ "feed": [
+  {
+   "t": "2026-10-27 12:31",
+   "kind": "sell",
+   "coin": "Blackout",
+   "text": "Paper sold 100% at $5.261e-05, P&L $+9.67",
+   "why": "fell back to +50% after run",
+   "link": "https://dexscreener.com/solana/8johbcattkxld1vsb8vvept7ywxv643cpcd29uarh32n"
+  },
+  {
+   "t": "2026-10-27 12:31",
+   "kind": "buy",
+   "coin": "urmom",
+   "text": "Paper bought $18.80 at $0.0002396",
+   "why": "mint/freeze off, LP locked 100%, top10 9.7%; age 70m; liq $41,641",
+   "link": "https://dexscreener.com/solana/8tyacyuttfqbglwez8nt6wkbkpqsej8oqq3k6fnp8vwu"
+  }
+ ],
+ "trades_csv_rows": 79
+}

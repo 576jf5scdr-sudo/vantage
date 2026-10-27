@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vantage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0d0a14">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Vantage">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <main id="scroll">
+    <header class="hdr">
+      <button class="logo-sq" data-act="tab" data-tab="home" aria-label="Vantage home"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11 L24 39 L40 11" fill="none" stroke="#0d0a14" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="hdr-r">
+        <button class="icon-btn" data-act="bell" aria-label="Notifications"><span id="bell"></span><i class="bell-dot" id="bell-dot" hidden></i></button>
+        <button class="avatar-sm" id="avatar" data-act="tab" data-tab="profile" aria-label="Profile">V</button>
+      </div>
+    </header>
+    <div id="view"></div>
+  </main>
+  <nav class="nav" id="tabbar" aria-label="Main"></nav>
+  <div id="sheet-root"></div>
+  <div id="toast" role="status"></div>
+</div>
+
+<script src="js/icons.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/store.js"></script>
+<script src="js/lessons.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

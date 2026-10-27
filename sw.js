@@ -1,5 +1,5 @@
 // Vantage service worker: offline shell + fresh desk data when online
-const VERSION = 'vantage-v2.0.0';
+const VERSION = 'vantage-v2.1.0';
 const SHELL = ['./', 'index.html', 'manifest.json', 'css/app.css', 'js/icons.js', 'js/charts.js', 'js/store.js', 'js/lessons.js', 'js/app.js',
   'fonts/inter-latin-wght-normal.woff2', 'fonts/outfit-latin-wght-normal.woff2', 'fonts/inter-greek-wght-normal.woff2', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'data/desk.json'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });

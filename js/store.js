@@ -35,26 +35,14 @@
   ];
 
   function blank() {
-    return { v: 1, examples: false, shifts: [], txs: [], goals: [], plan: [], lessons: {}, settings: { name: 'Γιαννης', weeklyGoal: 400 }, seenIntro: false };
+    return { v: 2, examples: false, tips: [], txs: [], goals: [], plan: [], lessons: {}, legacy: { shifts: [], plan: [] }, settings: { name: 'Γιαννης', weeklyGoal: 400 }, seenIntro: false };
   }
 
   function exampleData(t) {
     const ex = o => Object.assign({ id: uid(), example: true }, o);
-    const shifts = [];
-    // [daysAgo, start, end, base, tips, orders] two on today so the home card reads like the design
-    const rows = [
-      [0, '12:00', '14:30', 38.00, 8.45, 6], [0, '18:00', '22:00', 62.00, 20.00, 11],
-      [1, '17:30', '22:30', 71.50, 24.20, 13], [2, '18:00', '23:00', 66.00, 12.00, 12],
-      [4, '12:00', '15:00', 41.00, 6.50, 7], [4, '18:00', '23:30', 84.00, 31.80, 16],
-      [5, '17:00', '23:00', 78.50, 27.00, 15], [6, '11:30', '15:30', 55.00, 14.60, 9],
-      [8, '18:00', '22:30', 58.00, 9.40, 10], [9, '17:30', '22:00', 63.50, 18.30, 12],
-      [11, '12:00', '15:00', 40.00, 5.00, 7], [11, '18:00', '23:30', 82.00, 29.50, 15],
-      [12, '17:00', '23:00', 74.00, 22.00, 14], [14, '18:00', '22:00', 52.00, 8.00, 9],
-      [15, '18:00', '23:00', 67.00, 15.50, 12], [18, '17:30', '23:00', 76.00, 26.00, 14],
-      [19, '17:00', '23:00', 79.00, 24.50, 15], [22, '18:00', '22:30', 57.00, 10.50, 10],
-      [25, '17:30', '23:00', 73.00, 19.00, 13], [26, '17:00', '23:00', 80.00, 28.00, 15]
-    ];
-    rows.forEach(r => shifts.push(ex({ date: addDays(t, -r[0]), start: r[1], end: r[2], base: r[3], tips: r[4], orders: r[5] })));
+    // [daysAgo, tips] one tip total per day worked (days off have no entry)
+    const rows = [[0, 28.45, 'Evening rush'], [1, 24.20], [2, 12.00], [4, 38.30, 'Great Friday'], [5, 27.00], [6, 14.60], [8, 9.40], [9, 18.30], [11, 34.50], [12, 22.00], [14, 8.00], [15, 15.50], [18, 26.00], [19, 24.50], [22, 10.50], [25, 19.00], [26, 28.00]];
+    const tips = rows.map(r => ex({ date: addDays(t, -r[0]), amount: r[1], note: r[2] || '' }));
 
     const txs = [];
     const mo = (offset, day) => { const d = parse(t); d.setDate(1); d.setMonth(d.getMonth() + offset); d.setDate(day); return ymd(d); };
@@ -78,27 +66,36 @@
 
     const ws = weekStart(t);
     const plan = [
-      ex({ type: 'shift', date: ws, title: 'Evening shift', start: '18:00', end: '22:30', done: false }),
-      ex({ type: 'shift', date: addDays(ws, 1), title: 'Lunch + evening', start: '12:00', end: '22:00', done: false }),
       ex({ type: 'learn', date: addDays(ws, 1), title: 'Lesson: Position sizing', start: '15:00', end: '15:30', done: false }),
       ex({ type: 'todo', date: addDays(ws, 1), title: 'Check bike brakes', start: '', end: '', done: false }),
-      ex({ type: 'shift', date: addDays(ws, 3), title: 'Evening shift', start: '17:30', end: '23:00', done: false }),
-      ex({ type: 'shift', date: addDays(ws, 4), title: 'Evening shift', start: '17:00', end: '23:30', done: false }),
       ex({ type: 'learn', date: addDays(ws, 4), title: 'Lesson: Emergency fund', start: '14:00', end: '14:30', done: false }),
       ex({ type: 'todo', date: addDays(ws, 4), title: 'Move €50 to emergency fund', start: '', end: '', done: false }),
-      ex({ type: 'shift', date: addDays(ws, 5), title: 'Lunch + evening', start: '11:30', end: '23:00', done: false }),
       ex({ type: 'learn', date: addDays(ws, 6), title: 'Review the week + plan next', start: '11:00', end: '11:45', done: false }),
       ex({ type: 'todo', date: addDays(ws, 6), title: 'Refill tyre pressure', start: '', end: '', done: false })
     ];
     const lessons = {};
     lessons.budgeting = { date: addDays(t, -2), example: true };
     lessons.emergency = { date: addDays(t, -1), example: true };
-    return { shifts, txs, goals, plan, lessons };
+    return { tips, txs, goals, plan, lessons };
   }
 
+  // v1 -> v2: shifts are gone; each day's tips become one tip entry. Old shifts are archived (not shown) so nothing is lost.
+  function migrate(o) {
+    if (!Array.isArray(o.tips)) o.tips = [];
+    o.legacy = o.legacy || { shifts: [], plan: [] };
+    if (Array.isArray(o.shifts)) {
+      const real = {}, exm = {};
+      o.shifts.forEach(x => { const v = parseFloat(x.tips) || 0; if (v <= 0) return; (x.example ? exm : real)[x.date] = Math.round(((x.example ? exm : real)[x.date] || 0) * 100 + v * 100) / 100 / 1; });
+      Object.keys(real).forEach(d => o.tips.push({ id: uid(), date: d, amount: Math.round(real[d] * 100) / 100, note: '' }));
+      Object.keys(exm).forEach(d => { if (!real[d]) o.tips.push({ id: uid(), date: d, amount: Math.round(exm[d] * 100) / 100, note: '', example: true }); });
+      o.legacy.shifts = o.legacy.shifts.concat(o.shifts.filter(x => !x.example)); delete o.shifts;
+    }
+    if (Array.isArray(o.plan)) { const sh = o.plan.filter(x => x.type === 'shift'); if (sh.length) { o.legacy.plan = o.legacy.plan.concat(sh.filter(x => !x.example)); o.plan = o.plan.filter(x => x.type !== 'shift'); } }
+    o.v = 2; return o;
+  }
   let S;
   function load() {
-    try { const raw = localStorage.getItem(KEY); if (raw) { S = Object.assign(blank(), JSON.parse(raw)); S.settings = Object.assign(blank().settings, S.settings || {}); return; } } catch (e) {}
+    try { const raw = localStorage.getItem(KEY); if (raw) { S = Object.assign(blank(), migrate(JSON.parse(raw))); S.settings = Object.assign(blank().settings, S.settings || {}); return; } } catch (e) {}
     S = blank();
     const ex = exampleData(today());
     Object.assign(S, ex, { examples: true });
@@ -112,20 +109,20 @@
     get: () => S, save, ymd, parse, addDays, weekStart, today, hoursBetween, uid, num, round2, EXP_CATS, INC_CATS,
     storageOK: () => storageOK,
     reset() { S = blank(); save(); },
-    replace(obj) { S = Object.assign(blank(), obj); S.settings = Object.assign(blank().settings, S.settings || {}); save(); },
+    replace(obj) { S = Object.assign(blank(), migrate(obj)); S.settings = Object.assign(blank().settings, S.settings || {}); save(); },
     clearExamples() {
-      S.shifts = S.shifts.filter(x => !x.example); S.txs = S.txs.filter(x => !x.example); S.goals = S.goals.filter(x => !x.example); S.plan = S.plan.filter(x => !x.example);
+      S.tips = S.tips.filter(x => !x.example); S.txs = S.txs.filter(x => !x.example); S.goals = S.goals.filter(x => !x.example); S.plan = S.plan.filter(x => !x.example);
       Object.keys(S.lessons).forEach(k => { if (S.lessons[k].example) delete S.lessons[k]; });
       S.examples = false; save();
     },
     restoreExamples() {
       const ex = exampleData(today());
-      ['shifts', 'txs', 'goals', 'plan'].forEach(k => { S[k] = S[k].filter(x => !x.example).concat(ex[k]); });
+      ['tips', 'txs', 'goals', 'plan'].forEach(k => { S[k] = S[k].filter(x => !x.example).concat(ex[k]); });
       Object.keys(ex.lessons).forEach(k => { if (!S.lessons[k]) S.lessons[k] = ex.lessons[k]; });
       S.examples = true; save();
     },
     hasExamples() {
-      return S.shifts.some(x => x.example) || S.txs.some(x => x.example) || S.goals.some(x => x.example) || S.plan.some(x => x.example) || Object.values(S.lessons).some(x => x.example);
+      return S.tips.some(x => x.example) || S.txs.some(x => x.example) || S.goals.some(x => x.example) || S.plan.some(x => x.example) || Object.values(S.lessons).some(x => x.example);
     },
     // upsert helpers (editing an example makes it the user's own)
     upsert(list, item) {
@@ -137,24 +134,18 @@
     remove(list, id) { S[list] = S[list].filter(x => x.id !== id); save(); }
   };
 
-  // ---- selectors
-  const pay = s => round2((s.base || 0) + (s.tips || 0));
-  const hrs = s => hoursBetween(s.start, s.end);
-  api.pay = pay; api.hrs = hrs;
-  api.shiftsBetween = (a, b) => S.shifts.filter(s => s.date >= a && s.date <= b);
-  api.sumPay = list => round2(list.reduce((n, s) => n + pay(s), 0));
-  api.sumHrs = list => list.reduce((n, s) => n + hrs(s), 0);
-  api.dailyTotals = (endDate, n) => { const out = []; for (let i = n - 1; i >= 0; i--) { const d = addDays(endDate, -i); out.push({ date: d, total: api.sumPay(S.shifts.filter(s => s.date === d)) }); } return out; };
+  // ---- selectors (tips only; one entry per day)
+  api.tipsBetween = (a, b) => S.tips.filter(x => x.date >= a && x.date <= b);
+  api.sumTips = list => round2(list.reduce((n, x) => n + (x.amount || 0), 0));
+  api.dayTotal = d => api.sumTips(S.tips.filter(x => x.date === d));
   api.earnStats = () => {
-    const t = today(), ws = weekStart(t), we = addDays(ws, 6), mo = t.slice(0, 7);
-    const day = S.shifts.filter(s => s.date === t), wk = api.shiftsBetween(ws, we), mn = S.shifts.filter(s => s.date.slice(0, 7) === mo);
-    const stat = l => ({ total: api.sumPay(l), hours: api.sumHrs(l), orders: l.reduce((n, s) => n + (s.orders || 0), 0), tips: round2(l.reduce((n, s) => n + (s.tips || 0), 0)), tipCount: l.filter(s => (s.tips || 0) > 0).length, count: l.length });
-    // best weekday by average pay per hour
-    const wd = Array.from({ length: 7 }, () => ({ total: 0, hours: 0, n: 0 }));
-    S.shifts.forEach(s => { const k = (parse(s.date).getDay() + 6) % 7; wd[k].total += pay(s); wd[k].hours += hrs(s); wd[k].n++; });
-    const per = wd.map(x => (x.hours > 0 ? x.total / x.hours : 0));
-    let best = -1; per.forEach((v, i) => { if (v > 0 && (best < 0 || v > per[best])) best = i; });
-    return { today: stat(day), week: stat(wk), month: stat(mn), weekdays: wd, perHour: per, best };
+    const t = today(), ws = weekStart(t), mo = t.slice(0, 7);
+    const stat = l => ({ total: api.sumTips(l), days: new Set(l.filter(x => x.amount > 0).map(x => x.date)).size });
+    const day = S.tips.filter(x => x.date === t), wk = api.tipsBetween(ws, addDays(ws, 6)), mn = S.tips.filter(x => x.date.slice(0, 7) === mo);
+    const byDay = {}; S.tips.forEach(x => { byDay[x.date] = round2((byDay[x.date] || 0) + x.amount); });
+    let best = null; Object.keys(byDay).forEach(d => { if (byDay[d] > 0 && (!best || byDay[d] > best.total)) best = { date: d, total: byDay[d] }; });
+    const m = stat(mn);
+    return { today: stat(day), week: stat(wk), month: m, best, avgDay: m.days ? round2(m.total / m.days) : 0 };
   };
   api.monthTx = ym => S.txs.filter(x => x.date.slice(0, 7) === ym);
   api.budgetStats = ym => {

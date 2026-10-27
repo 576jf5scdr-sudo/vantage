@@ -1,4 +1,6 @@
-# Vantage (PWA) — Dusk Lavender v2
+# Vantage (PWA) — Dusk Lavender v2.1 (tips only)
+
+Earnings = the tips you collect each day (no shifts, hours or pay). Old v1 shift data is migrated automatically: each day's tips become one tip entry, and the old shifts are archived in storage under `legacy` (not shown).
 
 Dark purple design, floating bottom pill nav (Home, Earnings, Trading, Budget, Learn; Planner and Profile open from Home), candlestick charts. The old teal v1 is backed up in /workspace/vantage-app-backup-v1.
 
